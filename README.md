@@ -1,108 +1,250 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Sign it](/assets/images/logo-blue.png)
 
-Welcome USER_NAME,
+# Sign it
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[View the live project here](https://jade-quinn.github.io/sign/)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+'Sign it' is a simple single-player pattern-matching memory game. The game uses imagery of the sign language alphabet to encourage learning through play.
 
-## Gitpod Reminders
+## Table of Contents:
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+- [The Strategy Plane](#the-strategy-plane)
+- [The Scope Plane](#the-scope-plane)
+- [The Structure Plane](#the-structure-plane)
+- [The Skeleton Plane](#the-skeleton-plane)
+- [The Surface Plane](#the-surface-plane)
+- [Technologies Used](#technologies-used)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Credits](#credits)
 
-`python3 -m http.server`
+## UX
 
-A blue button should appear to click: _Make Public_,
+### The Strategy Plane
 
-Another blue button should appear to click: _Open Browser_.
+**Why are we so special?**
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The principal of a card matching memory game is already well established however after searching online there is no game of this type specifically related to sign language. While this is only anecdotal evidence, I found that when my sister was very young, she managed to learn the world flags very quickly by playing a game of this type which featured images of all the worlds flags. The game would allow users to learn through play rather than formal learning, players would become familiar with the sign language alphabet by playing the game. The concept of the game is simple and familiar to players which would make it suitable for a brand range of ages.
 
-A blue button should appear to click: _Make Public_,
+**Who else is building this?**
+Another online game that allows users to learn the sign language alpahbet is mind game.org. The game tests players by showing them a gesture and asking them to fill in the coresponding letter. The game itself does not work well on mobile and could be laid out better on desktop.
 
-Another blue button should appear to click: _Open Browser_.
+**What are the tech considerations?**
+As this is a game, there should be a mobile first approach to design and functionality. This product is for general consumers. As this is a B2C product, it should focus heavily on branding and emotive design.
+This is also important as the game itself is quite simple, it is important to engage players visually and also to clearly communicate the alphabet.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+**What are the tech considerations?**
 
-To log into the Heroku toolbelt CLI:
+To determine the objectives and user needs for this release I have created the table below. 
+Each opportunity/problem is rated on a scale of 1 - 5 in two dimensions; Importance and Feasibility.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+Opportunity/Problem | Importance | Feasibility
+------------ | ------------- | -------------
+Create card pairing game | 5 | 5
+Visually stimulating | 5 | 5
+Countdown timer | 4 | 3
+Count flips | 3 | 3
+Clear explanation of how to play | 5 | 5
+Cleary communicate sign language gestures | 5 | 5
+Score board | 1 | 1
+Share score with friends | 1 | 0
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+**User Stories**
 
-------
+- As a first time player, I want to easily understand the main purpose of the game.
+- As a first time player, I want to be able to navigate through the site easily.
+- As a first time player, I want to read how to play the game.
+- As a player, I want to compete against a timer.
+- As a player I want to know my score i.e how many flips.
+- As a returning player I want to learn / familiarise myself with the sign language alphabet.
 
-## Release History
+- As a site owner, I want to notify user when the timer will start.
+- As a site owner, I want overlays to be hidden during game play.
+- As a site owner, I want cards to shuffle randomly.
+- As a site owner, I want selected cards to flip.
+- As a site owner, I want players selected cards to be compared.
+- As a site owner, I want unmatched cards to turn back face down.
+- As a site owner, I want matched cards to stay face up.
+- As a site owner, I want the player to be notified of a match with a sound. 
+- As a site owner, I do not want already matched cards to be clickable.
+- As a site owner, I want the game to end if the time runs out.
+- As a site owner, I want the player to get a success message if the win.
+- As a site owner, I want the player to be notified of a win with a sound. 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- As a site owner, I want the game to reset when the player replays
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### The Scope Plane
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+#### Feature Scope
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+To establish the feature scope for this project I am using the agile methodology, I have made a list of all possible features and given each one a difficulty rating between 1 and 3.
+Each release will allow for a maximum of 12 points. The table below will be used to determine which features to prioritise and which to schedule for a later release.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+Feature | Rating
+------------ | -------------
+Logo that links to the home page so users can orientate themselves easily | 1
+Clear, consistent hamburger navigation on each page | 2
+Explain how to play the game | 1
+Responsive design | 1
+Countdown timer | 2
+Flip counter | 2
+Audio queues | 1
+Hide and display text overlays when required | 1
+Card that is being compared stays face up | 3
+Cards which are not a match turn back over | 3
+Matched cards stay face up | 3
+Stop user clicking a third card | 1
+Shuffle cards | 3
+Stop timer when all cards are matched | 1
+Reset cards at the end of the game | 1
+Load jacascript after DOM content is loaded | 1
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+Given limited resources, the features that offer the most value at this stage are:
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- Clear, consistent hamburger navigation on each page
+- Explain how to play the game
+- Responsive design
+- Countdown timer
+- Hide and display text overlays when required
+- Card that is being compared stays face up
+- Cards which are not a match turn back over
+- Matched cards stay face up
+- Stop user clicking a third card
+- Shuffle cards
+- Stop timer when all cards are matched
+- Reset cards at the end of the game
+- Load jacascript after DOM content is loaded
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+The priority is a working card game, any other features will be added at the end if there is time.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### The Structure Plane
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+As the site will not have a lot of content to begin with a linear narrative will work best. The project will consit of two pages, the home page and the game page.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### The Skeleton Plane
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+The wireframes were created using Balsamiq.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+![Wireframes](/assets/readme/wireframes.jpg)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### The Surface Plane
 
-------
+#### 1. Font
 
-## FAQ about the uptime script
+ Space Grotesk is a proportional sans-serif typeface allowing for increased human readability and enhanced eye-tracking on screens. A backup of `sans-serif`, is included in case of any particular font not rendering as expected. Lower cases is used on the description to enhance readability. The tone of the font is bold and fun to compliment the design choices through out the game. An animation has been added to the 'hello' message on the home page to communiate the tone further.
 
-**Why have you added this script?**
+[Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+##### 2. Color Scheme
 
-**How will this affect me?**
+The colour scheme is bright and bold, with a choice of strong contrasting colours to appeal visually to users
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+- Primary: rgb(226, 74, 36)
+- Secondary: rgb(235, 179, 178)
+- Tertiary: rgb(185, 231, 198)
+- Fourth: rgb(5, 48, 168)
+- Fifth: rgb(79, 56, 82)
+- Sixth: rgb(247, 223, 87)
+- Seventh: rgb(170, 210, 239)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+##### 3. Logo
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+The logo incorporates the font Space Grotesk aswel as the colour palette which has been sued across the site to maintain a consistant styling 
 
-**So….?**
+## Technologies Used
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Languages Used
 
-**Can I opt out?**
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Frameworks, Libraries & Programs Used
+
+1. [Google Fonts:](https://fonts.google.com/)
+    - Google fonts were used to import the 'Space Grotesk' font into the style.css.
+1. [Git](https://git-scm.com/)
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+1. [GitHub:](https://github.com/)
+    - GitHub is used to store the projects code after being pushed from Git.
+1. [Illustrator:](https://www.adobe.com/ie/products/illustrator.html)
+    - Illustrator was used to create the logo.
+1. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
+    - Photoshop was used to create card images.
+1. [Balsamiq:](https://balsamiq.com/)
+    - Balsamiq was used to create the wireframes at the 'Skelton Plane phase.
+
+## Testing
+Link to testing readme can be found [Here](https://github.com/Jade-Quinn/sign/blob/master/testing_readme.md)
+
+## Deployment
+
+### GitHub Pages
+
+The project was deployed to GitHub Pages using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
+
+### Forking the GitHub Repository
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
 
 ```
-pkill uptime.sh
-rm .vscode/uptime.sh
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 ```
 
-**Anything more?**
+7. Press Enter. Your local clone will be created.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
 
----
+Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
-Happy coding!
+## Credits
+
+### Code & Content
+- The method for creating the project road map in README.md came from Code Institute's lesson: 'It's All About The User Experience > The Strategy Plane > Strategy Trade-offs'
+- Reference I used for making CSS Hamburger Menu & Overlay [here](https://www.youtube.com/watch?v=DZg6UfS5zYg)
+- Video for crerating bouncing text effect used on homepage [here](https://www.youtube.com/watch?v=Xs5APzmHeeE)
+- Article about adding SVG waves [here](https://blog.prototypr.io/how-to-add-svg-waves-to-your-next-web-project-b720efe1c692)
+- Resource for generating SVG waves [here](https://getwaves.io/)
+- Javascript tutorial for creating a card matching game [here](https://www.youtube.com/watch?v=3uuQ3g92oPQ)
+- HTML and CSS tutorial for creating a card matching game [here](https://www.youtube.com/watch?v=28VfzEiJgy4&t=0s)
+
+### Media
+- Correct audio downloaded from free resource [here](https://freesound.org/people/LittleRainySeasons/sounds/335908/)
+- Win audio downloaded from free resource [here](https://freesound.org/people/EVRetro/sounds/535840/)
+- Images of sign alphabet downloaded from free resource [here](https://www.andnextcomesl.com/2019/03/free-printable-asl-sign-language-cards.html)
+
+### Acknowledgements
+
+- My mentor Aaron Sinnott, for helpful guidance.
+- My other half, Seamus, for cooking the dinners while I study
+
+
