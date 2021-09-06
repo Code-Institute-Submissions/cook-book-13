@@ -1,10 +1,10 @@
 ![Sign it](/assets/images/logo-blue.png)
 
-# Sign it
+# FoodStuff
 
 [View the live project here](https://jade-quinn.github.io/sign/)
 
-'Sign it' is a simple single-player pattern-matching memory game. The game uses imagery of the sign language alphabet to encourage learning through play.
+FoodStuff aims to build a community around real, fast and delicious food that just so happens to be good for you!
 
 ## Table of Contents:
 
@@ -24,54 +24,50 @@
 
 **Why are we so special?**
 
-The principal of a card matching memory game is already well established however after searching online there is no game of this type specifically related to sign language. While this is only anecdotal evidence, I found that when my sister was very young, she managed to learn the world flags very quickly by playing a game of this type which featured images of all the worlds flags. The game would allow users to learn through play rather than formal learning, players would become familiar with the sign language alphabet by playing the game. The concept of the game is simple and familiar to players which would make it suitable for a brand range of ages.
+FoodStuff allows users to store and easily access cooking recipes. Users are encourged to add recipies that are simple to make, with easy to access ingredienst. Users can search meals by preperation time, quickly prepeared good food that allows users to take back their evenings and weekends without having to comprimise on nutrition. Foodstuffs encourage users to prepare quick and healthy meals so they don't turn to takeaways. FoodStuff is target towards young adults who find their busy lives can interfere with the quality of food they eat. The site aims to be visual apealing, user freindy with a focus on easilty prepared nutritious meals.
 
 **Who else is building this?**
-Another online game that allows users to learn the sign language alpahbet is mind game.org. The game tests players by showing them a gesture and asking them to fill in the coresponding letter. The game itself does not work well on mobile and could be laid out better on desktop.
+
+There is a vast number of recipe sites online at present. These include:
+- [bbcgoodfood.com](https://www.bbcgoodfood.com/recipes/collection/easy-recipes)
+- [allrecipes.com](https://www.allrecipes.com/recipes/)
+- [bordbia.ie](https://www.bordbia.ie/recipes/)
+- [taste.com](https://www.taste.com.au/recipes/collections)
+- [simplyrecipes.com](https://www.simplyrecipes.com)
+
+Each of these site has a slightly different layout and varies in features they offer.
+
+
 
 **What are the tech considerations?**
-As this is a game, there should be a mobile first approach to design and functionality. This product is for general consumers. As this is a B2C product, it should focus heavily on branding and emotive design.
-This is also important as the game itself is quite simple, it is important to engage players visually and also to clearly communicate the alphabet.
 
-**What are the tech considerations?**
+As this application is trageted towards a tech savy audienc, there should be a mobile first approach to design and functionality. This product is for general consumers. As this is a B2C product, it should focus heavily on styling and emotive design. The target user is short on time so navigation should be intuitive and layout should quickly and clearly communicate recipie steps and ingredients.
 
 To determine the objectives and user needs for this release I have created the table below. 
 Each opportunity/problem is rated on a scale of 1 - 5 in two dimensions; Importance and Feasibility.
 
 Opportunity/Problem | Importance | Feasibility
 ------------ | ------------- | -------------
-Create card pairing game | 5 | 5
-Visually stimulating | 5 | 5
-Countdown timer | 4 | 3
-Count flips | 3 | 3
-Clear explanation of how to play | 5 | 5
-Cleary communicate sign language gestures | 5 | 5
-Score board | 1 | 1
-Share score with friends | 1 | 0
+Allow users to easily access cooking recipies | 5 | 5
+Include fields such as ingredients, preparation steps, required tools, cuisine, etc | 5 | 5
+Create form(s) to allow users to add new recipes to the site, edit them and delete them | 4 | 3
+Provide results in a manner that is visually appealing and user friendly | 3 | 3
+Include a section to recomend cook books | 5 | 5
+Provide statistics about recipes | 5 | 5
 
 **User Stories**
 
-- As a first time player, I want to easily understand the main purpose of the game.
-- As a first time player, I want to be able to navigate through the site easily.
-- As a first time player, I want to read how to play the game.
-- As a player, I want to compete against a timer.
-- As a player I want to know my score i.e how many flips.
-- As a returning player I want to learn / familiarise myself with the sign language alphabet.
+- As a first time user, I want to browse through recipes for inspiration on what to cook.
+- As a first time user, I want to search by category.
+- As a first time user, I want to search a specific food type.
+- As a first time user, I want to quickly read through a list of ingredients.
+- As a returning user, I want to quickly find a recipie I have used before.
+- As a returning user, I want to login in as a user to the site to add my own recipie.
+- As a returning user, I want to update/delete a recipe I have added.
+- As a returning user, I want to know that my changes have been saved successfully.
 
-- As a site owner, I want to notify user when the timer will start.
-- As a site owner, I want overlays to be hidden during game play.
-- As a site owner, I want cards to shuffle randomly.
-- As a site owner, I want selected cards to flip.
-- As a site owner, I want players selected cards to be compared.
-- As a site owner, I want unmatched cards to turn back face down.
-- As a site owner, I want matched cards to stay face up.
-- As a site owner, I want the player to be notified of a match with a sound. 
-- As a site owner, I do not want already matched cards to be clickable.
-- As a site owner, I want the game to end if the time runs out.
-- As a site owner, I want the player to get a success message if the win.
-- As a site owner, I want the player to be notified of a win with a sound. 
-
-- As a site owner, I want the game to reset when the player replays
+- As a site owner, I want to build a community around simple, nutritious meals.
+- As a site owner, I want to be notified when a recipie has been added so I can review the content.
 
 
 ### The Scope Plane
@@ -85,42 +81,22 @@ Feature | Rating
 ------------ | -------------
 Logo that links to the home page so users can orientate themselves easily | 1
 Clear, consistent hamburger navigation on each page | 2
-Explain how to play the game | 1
+Messaging that clearly communicates the focus of the site  | 1
 Responsive design | 1
-Countdown timer | 2
-Flip counter | 2
-Audio queues | 1
-Hide and display text overlays when required | 1
-Card that is being compared stays face up | 3
-Cards which are not a match turn back over | 3
-Matched cards stay face up | 3
-Stop user clicking a third card | 1
-Shuffle cards | 3
-Stop timer when all cards are matched | 1
-Reset cards at the end of the game | 1
 Load jacascript after DOM content is loaded | 1
 
 Given limited resources, the features that offer the most value at this stage are:
 
 - Clear, consistent hamburger navigation on each page
-- Explain how to play the game
+- Messaging that clearly communicates the focus of the site
 - Responsive design
-- Countdown timer
-- Hide and display text overlays when required
-- Card that is being compared stays face up
-- Cards which are not a match turn back over
-- Matched cards stay face up
-- Stop user clicking a third card
-- Shuffle cards
-- Stop timer when all cards are matched
-- Reset cards at the end of the game
 - Load jacascript after DOM content is loaded
 
 The priority is a working card game, any other features will be added at the end if there is time.
 
 ### The Structure Plane
 
-As the site will not have a lot of content to begin with a linear narrative will work best. The project will consit of two pages, the home page and the game page.
+As the site will not have a lot of content to begin with a linear narrative will work best. The site will consit of four pages: Home, Recipes, Reading, Login, Register.
 
 ### The Skeleton Plane
 
@@ -132,25 +108,21 @@ The wireframes were created using Balsamiq.
 
 #### 1. Font
 
- Space Grotesk is a proportional sans-serif typeface allowing for increased human readability and enhanced eye-tracking on screens. A backup of `sans-serif`, is included in case of any particular font not rendering as expected. Lower cases is used on the description to enhance readability. The tone of the font is bold and fun to compliment the design choices through out the game. An animation has been added to the 'hello' message on the home page to communiate the tone further.
+DM Sans is a low-contrast geometric sans serif design, intended for use at smaller text sizes, this will be especially helpfull for recipies which have large bodies of text in the steps section as text will be clear and easy to read. The tone of the font is contempory and clear. A backup of `sans-serif`, is included in case of any particular font not rendering as expected. Lower cases is used on the description to enhance readability.
 
-[Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)
+[DM Sans](https://fonts.google.com/specimen/DM+Sans?query=dm+sans#standard-styles)
 
 ##### 2. Color Scheme
 
-The colour scheme is bright and bold, with a choice of strong contrasting colours to appeal visually to users
+The colour scheme is simple and paired back to allow the focus to be on content and legibility. The primary colour of green is in refrence to nutritious food choices. Hues of the primary green as well as as complimentary hue of warm beige are used throughout the site to aid with visual naviagtion.
 
-- Primary: rgb(226, 74, 36)
-- Secondary: rgb(235, 179, 178)
-- Tertiary: rgb(185, 231, 198)
-- Fourth: rgb(5, 48, 168)
-- Fifth: rgb(79, 56, 82)
-- Sixth: rgb(247, 223, 87)
-- Seventh: rgb(170, 210, 239)
+- Primary: rgb(177, 236, 178)
+- Secondary: rgb(241, 250, 242)
+- Tertiary: rgb(248, 245, 241)
 
 ##### 3. Logo
 
-The logo incorporates the font Space Grotesk aswel as the colour palette which has been sued across the site to maintain a consistant styling 
+The logo incorporates the font DM Sans which has been used across the site to maintain a consistant styling 
 
 ## Technologies Used
 
@@ -231,15 +203,10 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ### Code & Content
 - The method for creating the project road map in README.md came from Code Institute's lesson: 'It's All About The User Experience > The Strategy Plane > Strategy Trade-offs'
 - Reference I used for making CSS Hamburger Menu & Overlay [here](https://www.youtube.com/watch?v=DZg6UfS5zYg)
-- Video for crerating bouncing text effect used on homepage [here](https://www.youtube.com/watch?v=Xs5APzmHeeE)
 - Article about adding SVG waves [here](https://blog.prototypr.io/how-to-add-svg-waves-to-your-next-web-project-b720efe1c692)
 - Resource for generating SVG waves [here](https://getwaves.io/)
-- Javascript tutorial for creating a card matching game [here](https://www.youtube.com/watch?v=3uuQ3g92oPQ)
-- HTML and CSS tutorial for creating a card matching game [here](https://www.youtube.com/watch?v=28VfzEiJgy4&t=0s)
 
 ### Media
-- Correct audio downloaded from free resource [here](https://freesound.org/people/LittleRainySeasons/sounds/335908/)
-- Win audio downloaded from free resource [here](https://freesound.org/people/EVRetro/sounds/535840/)
 - Images of sign alphabet downloaded from free resource [here](https://www.andnextcomesl.com/2019/03/free-printable-asl-sign-language-cards.html)
 
 ### Acknowledgements
