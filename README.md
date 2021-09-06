@@ -37,8 +37,6 @@ There is a vast number of recipe sites online at present. These include:
 
 Each of these site has a slightly different layout and varies in features they offer.
 
-
-
 **What are the tech considerations?**
 
 As this application is trageted towards a tech savy audienc, there should be a mobile first approach to design and functionality. This product is for general consumers. As this is a B2C product, it should focus heavily on styling and emotive design. The target user is short on time so navigation should be intuitive and layout should quickly and clearly communicate recipie steps and ingredients.
@@ -108,9 +106,7 @@ The wireframes were created using Balsamiq.
 
 #### 1. Font
 
-DM Sans is a low-contrast geometric sans serif design, intended for use at smaller text sizes, this will be especially helpfull for recipies which have large bodies of text in the steps section as text will be clear and easy to read. The tone of the font is contempory and clear. A backup of `sans-serif`, is included in case of any particular font not rendering as expected. Lower cases is used on the description to enhance readability.
-
-[DM Sans](https://fonts.google.com/specimen/DM+Sans?query=dm+sans#standard-styles)
+[DM Sans](https://fonts.google.com/specimen/DM+Sans?query=dm+sans#standard-styles) is a low-contrast geometric sans serif design, intended for use at smaller text sizes, this will be especially helpfull for recipies which have large bodies of text in the steps section as text will be clear and easy to read. The tone of the font is contempory and clear. A backup of `sans-serif`, is included in case of any particular font not rendering as expected. Lower cases is used on the description to enhance readability.
 
 ##### 2. Color Scheme
 
