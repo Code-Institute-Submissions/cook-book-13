@@ -10,9 +10,9 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/recipe")
-def about():
-    return render_template("recipe.html")
+@app.route("/recipes")
+def recipes():
+    return render_template("recipes.html")
 
 
 if __name__ == "__main__":
