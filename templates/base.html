@@ -13,12 +13,12 @@
 <body>
 
     <header>
-        <nav>
+        <nav class="green lighten-5">
             <!-- top navbar -->
             <div class="nav-wrapper">
-                <a href="#!" class="brand-logo">FoodStuff</a>
+                <a href="#!" class="brand-logo black-text">FoodStuff</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
+                <ul class="right hide-on-med-and-down black-text">
                     <li><a href="{{ url_for('index') }}">Home</a></li>
                     {% if session.user %}
                         <li><a href="{{ url_for('logout') }}">Logout</a></li>
