@@ -7,6 +7,7 @@
 FoodStuff aims to build a community around real, fast and delicious food that just so happens to be good for you!
 
 404 page
+remove font awesome icons
 
 ## Table of Contents:
 
