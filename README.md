@@ -6,6 +6,8 @@
 
 FoodStuff aims to build a community around real, fast and delicious food that just so happens to be good for you!
 
+404 page
+
 ## Table of Contents:
 
 - [The Strategy Plane](#the-strategy-plane)
@@ -119,6 +121,10 @@ The colour scheme is simple and paired back to allow the focus to be on content 
 ##### 3. Logo
 
 The logo incorporates the font DM Sans which has been used across the site to maintain a consistant styling 
+
+### Database Design
+Database Schema
+ER Model
 
 ## Technologies Used
 

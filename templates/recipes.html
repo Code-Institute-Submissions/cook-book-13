@@ -1,4 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
     <h1>Recipes Page</h1>
+
+    {% for reci in recipe %}
+        {{ reci.recipe_name }}<br>
+        {{ reci.category_name }}<br>
+        {{ reci.prep_time }}<br>
+    {% endfor %}
 {% endblock %}
