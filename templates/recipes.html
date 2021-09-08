@@ -16,16 +16,17 @@
     <div class="row">
         {% for r in recipe %}
         <div class="col s12 m7">
-            <div class="card medium">
+            <div class="card">
                 <div class="card-image">
                     <img src="{{ r.recipe_img_url }}">
-                    <span class="card-title">{{ r.recipe_name }}</span>
                 </div>
                 <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                    <span>{{ r.category_name }}</span>
+                    <span class="card-title">{{ r.recipe_name }}</span>
+                    <span>{{ r.prep_time }}</span>
                 </div>
                 <div class="card-action">
-                    <a href="#">This is a link</a>
+                    <a href="#">View Recipe</a>
                 </div>
             </div>
         </div>
