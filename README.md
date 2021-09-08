@@ -6,9 +6,6 @@
 
 FoodStuff aims to build a community around real, fast and delicious food that just so happens to be good for you!
 
-404 page
-remove font awesome icons
-
 ## Table of Contents:
 
 - [The Strategy Plane](#the-strategy-plane)
@@ -27,7 +24,7 @@ remove font awesome icons
 
 **Why are we so special?**
 
-FoodStuff allows users to store and easily access cooking recipes. Users are encourged to add recipies that are simple to make, with easy to access ingredienst. Users can search meals by preperation time, quickly prepeared good food that allows users to take back their evenings and weekends without having to comprimise on nutrition. Foodstuffs encourage users to prepare quick and healthy meals so they don't turn to takeaways. FoodStuff is target towards young adults who find their busy lives can interfere with the quality of food they eat. The site aims to be visual apealing, user freindy with a focus on easilty prepared nutritious meals.
+FoodStuff allows users to store and easily access cooking recipes. Users are encourged to add recipes that are simple to make, with easy to access ingredients. FoodStuff is target towards young adults who find their busy lives can interfere with the quality of food they eat. The site aims to be visual apealing, user freindy with a focus on easilty prepared nutritious meals.
 
 **Who else is building this?**
 
@@ -42,7 +39,7 @@ Each of these site has a slightly different layout and varies in features they o
 
 **What are the tech considerations?**
 
-As this application is trageted towards a tech savy audienc, there should be a mobile first approach to design and functionality. This product is for general consumers. As this is a B2C product, it should focus heavily on styling and emotive design. The target user is short on time so navigation should be intuitive and layout should quickly and clearly communicate recipie steps and ingredients.
+As this application is trageted towards a tech savy audience, there should be a mobile first approach to design and functionality. This product is for general consumers. As this is a B2C product, it should focus heavily on styling and emotive design. The target user is short on time so navigation should be intuitive and layout should quickly and clearly communicate recipie steps and ingredients.
 
 To determine the objectives and user needs for this release I have created the table below. 
 Each opportunity/problem is rated on a scale of 1 - 5 in two dimensions; Importance and Feasibility.
@@ -91,19 +88,10 @@ Given limited resources, the features that offer the most value at this stage ar
 - Clear, consistent hamburger navigation on each page
 - Messaging that clearly communicates the focus of the site
 - Responsive design
-- Load jacascript after DOM content is loaded
-
-The priority is a working card game, any other features will be added at the end if there is time.
 
 ### The Structure Plane
 
-As the site will not have a lot of content to begin with a linear narrative will work best. The site will consit of four pages: Home, Recipes, Reading, Login, Register.
-
-### The Skeleton Plane
-
-The wireframes were created using Balsamiq.
-
-![Wireframes](/assets/readme/wireframes.jpg)
+As the site will not have a lot of content to begin with a linear narrative will work best.
 
 ### The Surface Plane
 
@@ -131,9 +119,18 @@ ER Model
 
 ### Languages Used
 
--   [HTML5](https://en.wikipedia.org/wiki/HTML5)
--   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
--   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+BSON - bson.objectid is a required dependency for MongoDB management system.
+CSS - used to create the styling throughout the site.
+Google fonts - used to import fonts.
+HTML - used to create the site structure.
+Flask - framework used to create and populate the templates.
+JavaScript - used for the sidenav, back-to-top button, image preview.
+Jinja - Jinja templating language was used to simplify and display backend data in html.
+jQuery - used to activate the Materialize functionality.
+Materialize - library used for styling and responsiveness.
+PyMongo - flask_pymongo was used for interacting with MongoDB database from Python.
+Python - used to write the logic that operates the site.
+Werkzeug - used for password hashing and authentication.
 
 ### Frameworks, Libraries & Programs Used
 
@@ -143,15 +140,6 @@ ER Model
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
-1. [Illustrator:](https://www.adobe.com/ie/products/illustrator.html)
-    - Illustrator was used to create the logo.
-1. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
-    - Photoshop was used to create card images.
-1. [Balsamiq:](https://balsamiq.com/)
-    - Balsamiq was used to create the wireframes at the 'Skelton Plane phase.
-
-## Testing
-Link to testing readme can be found [Here](https://github.com/Jade-Quinn/sign/blob/master/testing_readme.md)
 
 ## Deployment
 
@@ -201,20 +189,5 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
-## Credits
-
-### Code & Content
-- The method for creating the project road map in README.md came from Code Institute's lesson: 'It's All About The User Experience > The Strategy Plane > Strategy Trade-offs'
-- Reference I used for making CSS Hamburger Menu & Overlay [here](https://www.youtube.com/watch?v=DZg6UfS5zYg)
-- Article about adding SVG waves [here](https://blog.prototypr.io/how-to-add-svg-waves-to-your-next-web-project-b720efe1c692)
-- Resource for generating SVG waves [here](https://getwaves.io/)
-
-### Media
-- Images of sign alphabet downloaded from free resource [here](https://www.andnextcomesl.com/2019/03/free-printable-asl-sign-language-cards.html)
-
-### Acknowledgements
-
-- My mentor Aaron Sinnott, for helpful guidance.
-- My other half, Seamus, for cooking the dinners while I study
 
 
