@@ -1,4 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
-    <h1>Home Page</h1>
+    <div class="container intro">
+        <div class="col l6">
+            <h1 class="flow-text">If you’re ready to change your relationship with food for the better, join the FoodStuff community for daily meal inspiration.</h1> 
+        </div>  
+    </div>
+    <div class="img-box">
+        <img class="responsive-img" src="{{ url_for('static', filename='images/home-page.jpg') }}"
+            alt="Mint Leaf">
+    </div>
 {% endblock %}

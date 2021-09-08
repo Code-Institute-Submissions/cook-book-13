@@ -2,5 +2,26 @@
 
 body {
     font-family: 'DM Sans', sans-serif;
-    font-size: 18px;
+}
+
+nav {
+    box-shadow: none;
+}
+
+nav ul a {
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.intro h1{
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 1.188em;
+    margin: 25px 0;
+    padding: 2.5rem 0;
+}
+
+.page-footer .fab{
+    padding: 0 10px;
+    color: #fff;
 }

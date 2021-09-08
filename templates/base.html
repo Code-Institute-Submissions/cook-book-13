@@ -11,13 +11,13 @@
     {% endblock %}
     <title>FoodStuff</title>
 </head>
-<body>
+<body class="green lighten-5">
 
     <header>
         <nav class="green lighten-5">
             <!-- top navbar -->
-            <div class="nav-wrapper">
-                <a href="#!" class="brand-logo black-text">FoodStuff</a>
+            <div class="nav-wrapper container">
+                <a href="#!" class="brand-logo black-text"><strong>FoodStuff</strong></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down black-text">
                     <li><a href="{{ url_for('index') }}">Home</a></li>
@@ -66,10 +66,10 @@
     {% endblock %}
 
     <!-- footer -->
-    <footer class="page-footer">
+    <footer class="page-footer grey darken-4">
         <div class="footer-copyright">
             <div class="container">
-                © 2021 Copyright
+                <p class="left">© 2021 Copyright</p>
                 <p class="right">
                     <a target="_blank" rel="noopener" href="https://www.instagram.com/">
                     <i class="fab fa-instagram" aria-hidden="true"></i>
