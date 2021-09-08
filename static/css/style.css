@@ -25,3 +25,7 @@ nav ul a {
     padding: 0 10px;
     color: #fff;
 }
+
+.btn-small {
+    margin: 5px;
+}
