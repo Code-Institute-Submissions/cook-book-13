@@ -2,17 +2,6 @@
 {% block content %}
     <h1>Recipes Page</h1>
 
-    {% for r in recipe %}
-        {{ r.recipe_img_url }}<br>
-        {{ r.recipe_name }}<br>
-        {{ r.category_name }}<br>
-        {{ r.recipe_ingredients }}<br>
-        {{ r.recipe_method }}<br>
-        {{ r.prep_time }}<br>
-        {{ r.serves }}<br>
-        {{ r.created_by }}<br>
-    {% endfor %}
-
     <div class="row">
         {% for r in recipe %}
         <div class="col s12 m7">
@@ -24,6 +13,7 @@
                     <span>{{ r.category_name }}</span>
                     <span class="card-title">{{ r.recipe_name }}</span>
                     <span>{{ r.prep_time }}</span>
+                    <p><em>by: {{ r.created_by }}</em></p>
                 </div>
                 <div class="card-action">
                     <a href="#">View Recipe</a>
