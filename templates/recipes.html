@@ -2,18 +2,24 @@
 {% block content %}
     <h1>Recipes Page</h1>
 
-    {% for reci in recipe %}
-        {{ reci.recipe_name }}<br>
-        {{ reci.category_name }}<br>
-        {{ reci.prep_time }}<br>
+    {% for r in recipe %}
+        {{ r.recipe_img_url }}<br>
+        {{ r.recipe_name }}<br>
+        {{ r.category_name }}<br>
+        {{ r.recipe_ingredients }}<br>
+        {{ r.recipe_method }}<br>
+        {{ r.prep_time }}<br>
+        {{ r.serves }}<br>
+        {{ r.created_by }}<br>
     {% endfor %}
 
     <div class="row">
+        {% for r in recipe %}
         <div class="col s12 m7">
             <div class="card medium">
                 <div class="card-image">
-                    <img src="images/sample-1.jpg">
-                    <span class="card-title">Card Title</span>
+                    <img src="{{ r.recipe_img_url }}">
+                    <span class="card-title">{{ r.recipe_name }}</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
@@ -23,6 +29,7 @@
                 </div>
             </div>
         </div>
+        {% endfor %}
     </div>
 
 {% endblock %}
